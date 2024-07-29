@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antisuícido</title>
+</head>
+<body>
+    <h1>Jogo de Prevenção ao Suicídio</h1>
+    <p>Seja um amigo e ajude alguém que está passando por dificuldades.</p>
+    <button onclick="mostrarDica()">Mostrar Dica</button>
+    <div id="dica" style="display: none;">
+        <p>Você não está sozinho(a). Fale com alguém de confiança.</p>
+    </div>
+
+    <script>
+        // Função para mostrar a dica
+        function mostrarDica() {
+            const dicaElement = document.getElementById('dica');
+            dicaElement.style.display = 'block';
+        }
+    </script>
+</body>
+</html>

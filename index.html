@@ -1,24 +1,53 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Antisuícido</title>
+    <title>Agrinho: Pense, Crie e Participe</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Jogo de Prevenção ao Suicídio</h1>
-    <p>Seja um amigo e ajude alguém que está passando por dificuldades.</p>
-    <button onclick="mostrarDica()">Mostrar Dica</button>
-    <div id="dica" style="display: none;">
-        <p>Você não está sozinho(a). Fale com alguém de confiança.</p>
-    </div>
-
-    <script>
-        // Função para mostrar a dica
-        function mostrarDica() {
-            const dicaElement = document.getElementById('dica');
-            dicaElement.style.display = 'block';
-        }
-    </script>
+    <header>
+        <h1>Agrinho: Pense, Crie e Participe</h1>
+    </header>
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#programacao">Programação</a>
+        <a href="#contato">Contato</a>
+    </nav>
+    <main>
+        <div class="container">
+            <section id="sobre">
+                <h2>Sobre o Agrinho</h2>
+                <p>O programa Agrinho é uma iniciativa que visa promover a educação e a conscientização entre os jovens sobre temas como sustentabilidade, cidadania e inovação. Através de diversas atividades e projetos, o Agrinho incentiva os estudantes a pensar de forma crítica, criar soluções inovadoras e participar ativamente em suas comunidades.</p>
+            </section>
+            <section id="programacao" class="content">
+                <h2>Programação</h2>
+                <div class="card" id="atividade1">
+                    <img src="img/atividade1.jpg" alt="Atividade 1">
+                    <h3>Oficina de Inovação</h3>
+                    <p>Participe de oficinas que estimulam a criatividade e o desenvolvimento de novas ideias.</p>
+                </div>
+                <div class="card" id="atividade2">
+                    <img src="img/atividade2.jpg" alt="Atividade 2">
+                    <h3>Palestras Motivacionais</h3>
+                    <p>Inspire-se com palestras de profissionais renomados em diversas áreas.</p>
+                </div>
+                <div class="card" id="atividade3">
+                    <img src="img/atividade3.jpg" alt="Atividade 3">
+                    <h3>Competições</h3>
+                    <p>Engaje-se em competições que desafiam sua capacidade de resolver problemas e trabalhar em equipe.</p>
+                </div>
+            </section>
+            <section id="contato">
+                <h2>Contato</h2>
+                <p>Entre em contato conosco através do e-mail: <a href="mailto:contato@agrinho.org">contato@agrinho.org</a></p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Agrinho. Todos os direitos reservados.</p>
+    </footer>
+    <script src="main.js"></script>
 </body>
 </html>
